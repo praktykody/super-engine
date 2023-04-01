@@ -1,0 +1,36 @@
+*{box-sizing: border-box}
+.overWrapper{
+    display: flex;
+    align-items: center;
+}
+.wrapper{
+    position: relative;
+    /* height: 480px; */
+    width: 100%;
+    aspect-ratio: 4 / 3;
+}
+.wrapper img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+.wrapper div{
+    position: absolute;
+    top: 37.5%;
+    height: 25%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size:2em;
+    transition: .5s;
+    z-index: 2;
+}
+.wrapper div:hover{
+    background-color: rgba(0, 0, 0, 0.281);
+    color: #fff;
+}
+.next{
+    right: 0%;
+}
