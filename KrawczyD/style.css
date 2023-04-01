@@ -1,13 +1,38 @@
 *{box-sizing: border-box}
+.overWrapper{
+    display: flex;
+    align-items: center;
+}
 .wrapper{
-    border: 5px dashed red;
     position: relative;
-    height: 480px;
-    width: 640px;
+    /* height: 480px; */
+    width: 100%;
+    aspect-ratio: 4 / 3;
 }
 .wrapper img{
-    border: 5px dashed blue;
     position: absolute;
     width: 100%;
     height: 100%;
 }
+.wrapper div{
+    position: absolute;
+    height: 100%
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    font-size:2em;
+    transition: .5s;
+    z-index: 2;
+}
+.wrapper div:hover{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+.next{
+    right: 0%;
+}
+
+
+
+
