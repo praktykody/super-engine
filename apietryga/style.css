@@ -1,8 +1,12 @@
 *{ box-sizing: border-box; }
+/* .overWrapper{
+  display:flex;
+  align-items: center;
+} */
 .wrapper{
   border:5px dashed red;
-  height:480px;
-  width:640px;
+  aspect-ratio: 4 / 3;
+  width: 100%;
   position:relative;
 }
 .wrapper img{
@@ -11,3 +15,25 @@
   width:100%;
   height:100%;
 }
+.wrapper div{
+  cursor: pointer;
+  border:5px dashed green; 
+  position: absolute;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  width:15%;
+  font-size:2em;
+  transition: .5s;
+  z-index:2;
+}
+.wrapper div:hover{
+  background: rgba(0, 0, 0, 0.8);
+  color:#fff;
+}
+.next{
+  right: 0;
+}
+
+
