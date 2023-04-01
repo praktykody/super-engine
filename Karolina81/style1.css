@@ -1,0 +1,42 @@
+*{ box-sizing: border-box; }
+.overWrapper{
+    display:flex;
+    align-items:center;
+}
+
+
+.wrapper{
+    border:5px dashed red;
+    aspect-ratio: 4/3;
+    width:100%;
+    position:relative;
+}
+.wrapper img{
+    border:5px dashed blue;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+.wrapper div{
+    cursor: pointer;
+    border:5px dashed green;
+    position: absolute;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:15%;
+    font-size:2em;
+    transition: .5s;
+    z-index:2;
+
+}
+.wrapper div:hover{
+    background: transparent;
+    color: #fff;
+
+}
+.next{
+    right:0;
+}
+
