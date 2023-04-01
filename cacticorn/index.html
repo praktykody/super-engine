@@ -11,11 +11,12 @@
 <body>
   
   <div class="wrapper">
-    <div class="prev">&larr;</div>
+    <div onclick="changeSlide(--slide)"
+    class="prev">&larr;</div>
     <img src="../_img/1.webp" alt="forest">
     <img src="../_img/2.webp" alt="moutains">
     <img src="../_img/3.webp" alt="lake">
-    <div onclick="changeSlide(slide++)"
+    <div onclick="changeSlide(++slide)"
     class="next">&rarr;</div>
   </div>
 
